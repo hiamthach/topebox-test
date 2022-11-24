@@ -1,0 +1,44 @@
+@use '../../../content/scss/' as *;
+
+.footer {
+  width: 100%;
+  padding: 64px 100px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    list-style-type: none;
+    li {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+
+      &:hover {
+        cursor: pointer;
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__logo {
+    height: fit-content;
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 340px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 23px;
+  }
+}
