@@ -25,7 +25,7 @@ const CardWrapper = () => {
             trao đi yêu thương nhé! ❤️ Chúc các bạn đón một mùa giáng sinh an lành, hạnh phúc.
           </p>
         </div>
-        <img src={bellsImg} alt="Bell" className="card-wrapper__head--coco" />
+        <img src={bellsImg} alt="Bell" className="card-wrapper__head--coco card-wrapper__head--bell" />
       </div>
       <ul className="card-wrapper__list">
         <li className="card-wrapper__item">

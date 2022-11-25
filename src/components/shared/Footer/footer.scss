@@ -7,9 +7,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  gap: 20px;
 
   &__links {
+    width: 33.33333%;
     display: flex;
     flex-direction: column;
     gap: 17px;
@@ -27,12 +28,11 @@
   }
 
   &__logo {
+    width: 33.33333%;
     height: fit-content;
+    display: flex;
+    justify-content: center;
     .logo {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       width: 340px;
     }
   }
@@ -40,5 +40,29 @@
   &__icons {
     display: flex;
     gap: 23px;
+    width: 33.33333%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 760px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__logo,
+    &__icons,
+    &__links {
+      width: 100%;
+    }
+
+    &__links {
+      text-align: center;
+    }
+
+    &__icons {
+      justify-content: center;
+    }
   }
 }

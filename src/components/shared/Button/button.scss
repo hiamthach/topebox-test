@@ -38,7 +38,8 @@
       border-color: $black-color-2;
       background-color: #fff;
       &:hover {
-        background-color: rgb(42 43 50 / 5%);
+        background-color: $black-color-2;
+        color: $white-color;
       }
     }
   }

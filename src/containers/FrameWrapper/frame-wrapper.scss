@@ -26,6 +26,9 @@
 
       p {
         margin-top: 32px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
       }
     }
 
@@ -37,5 +40,87 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .frame-wrapper {
+    &__head {
+      gap: 48px;
+      &--text {
+        h1 {
+          font-size: 40px;
+          line-height: 48px;
+        }
+      }
+
+      &--coco {
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .frame-wrapper {
+    &__head {
+      gap: 48px;
+      &--text {
+        h1 {
+          font-size: 36px;
+          line-height: 42px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .frame-wrapper {
+    &__head {
+      gap: 36px;
+      &--coco {
+        width: 160px;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .frame-wrapper {
+    padding: 54px 32px 54px;
+
+    &__head {
+      gap: 24px;
+      &--text {
+        h1 {
+          font-size: 28px;
+          line-height: 36px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      &--coco {
+        width: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .frame-wrapper {
+    &__head {
+      &--coco {
+        display: none;
+      }
+    }
+    &__list {
+      flex-wrap: wrap;
+    }
   }
 }
