@@ -1,0 +1,41 @@
+@use '../../content/scss/' as *;
+
+.frame-wrapper {
+  padding: 100px 60px 72px;
+  &__head {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 32px;
+
+    &--text {
+      text-align: center;
+      h1 {
+        font-family: $f-family-head;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $text-color-2;
+        span {
+          color: $primary-color;
+        }
+      }
+
+      p {
+        margin-top: 32px;
+      }
+    }
+
+    &--coco {
+      height: fit-content;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

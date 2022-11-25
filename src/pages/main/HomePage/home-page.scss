@@ -1,0 +1,11 @@
+@use '../../../content/scss/' as *;
+
+.home-page {
+  &__banner {
+    margin-top: 72px;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}

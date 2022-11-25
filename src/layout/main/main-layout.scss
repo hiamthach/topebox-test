@@ -12,6 +12,7 @@
 
   &__wrapper {
     background-color: $white-color;
+    backdrop-filter: blur(30px);
     border-radius: 50px;
     width: 100%;
   }

@@ -1,0 +1,55 @@
+@use '../../../content/scss/' as *;
+
+.header {
+  width: 100%;
+  padding: 18px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    cursor: pointer;
+    .logo {
+      width: 116px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 58px;
+
+    &--link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: $f-family-head;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      height: 25px;
+      color: $black-color-2;
+      text-transform: uppercase;
+      cursor: pointer;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 37.78%;
+        // right: 37.78%;
+        bottom: -5px;
+        height: 2px;
+        background-color: #8a1a1a;
+        width: auto;
+      }
+
+      &:hover {
+        color: #8a1a1a;
+
+        &::after {
+          right: 37.78%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@use '../../content/scss/' as *;
+
+.card-wrapper {
+  padding: 0 100px 145px;
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 110px;
+    margin-bottom: 50px;
+
+    &--text {
+      margin-bottom: 48px;
+      h1 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        color: $black-color;
+        text-transform: none;
+      }
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  &__item {
+    text-align: center;
+    img {
+      margin-bottom: 42px;
+    }
+  }
+}

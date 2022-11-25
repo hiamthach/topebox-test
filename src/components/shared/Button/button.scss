@@ -4,9 +4,11 @@
   background-color: $primary-color;
   color: $white-color;
   font-size: 15px;
+  line-height: 18px;
   font-weight: 400;
-  padding: 12px 16px;
+  padding: 10px 16px;
   border-radius: 5px;
+  cursor: pointer;
   &:hover {
     background-color: $primary-color-dark;
   }
@@ -16,7 +18,8 @@
     color: $primary-color;
     background-color: #fff;
     &:hover {
-      background-color: $primary-color-light;
+      background-color: $primary-color;
+      color: $white-color;
     }
   }
 
@@ -27,12 +30,15 @@
 
   &.secondary {
     background-color: $black-color-2;
+    font-family: $f-family-head;
     &.outline {
       color: $black-color-2;
+      border-width: 1.5px;
+      font-weight: 600;
       border-color: $black-color-2;
       background-color: #fff;
       &:hover {
-        background-color: rgb(42 43 50 / 10%);
+        background-color: rgb(42 43 50 / 5%);
       }
     }
   }

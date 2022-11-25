@@ -1,0 +1,33 @@
+@use '../../../content/scss/' as *;
+
+.frame-item {
+  width: 430px;
+
+  img {
+    width: 100%;
+    height: 430px;
+  }
+
+  &__content {
+    padding: 21px 18px 32px;
+    text-align: center;
+    h5 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: $text-color-2;
+      margin: 12px 0 21px;
+    }
+
+    &--btns {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+    }
+  }
+}
