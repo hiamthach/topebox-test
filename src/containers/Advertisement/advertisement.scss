@@ -67,3 +67,14 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+  .advertisement {
+    padding: 12px 32px 24px;
+    gap: 24px;
+
+    &__right {
+      gap: 16px;
+    }
+  }
+}

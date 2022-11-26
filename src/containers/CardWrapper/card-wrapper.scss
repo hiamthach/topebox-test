@@ -46,7 +46,7 @@
 
 @media (max-width: 1600px) {
   .card-wrapper {
-    padding: 0 80px 145px;
+    padding: 0 72px 145px;
     &__head {
       gap: 64px;
     }
@@ -55,6 +55,8 @@
 
 @media (max-width: 1440px) {
   .card-wrapper {
+    padding: 0 64px 120px;
+
     &__head {
       gap: 36px;
       &--text {

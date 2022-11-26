@@ -9,3 +9,11 @@
     }
   }
 }
+
+@media (max-width: 760px) {
+  .home-page {
+    &__banner {
+      margin-top: 0px;
+    }
+  }
+}

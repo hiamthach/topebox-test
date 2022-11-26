@@ -142,17 +142,24 @@
   }
 }
 
+@media (max-width: 760px) {
+  .xmas {
+    &__main {
+      flex-wrap: wrap;
+      &--col {
+        padding: 20px 32px;
+        width: 100%;
+      }
+    }
+  }
+}
+
 @media (max-width: 480px) {
   .xmas {
     padding: 60px 0 24px;
     &__cloud {
       // display: none;
       top: -42px;
-    }
-    &__main {
-      &--col {
-        padding: 20px 60px;
-      }
     }
     &__card-list {
       flex-wrap: wrap;
